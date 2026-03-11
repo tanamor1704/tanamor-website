@@ -462,6 +462,99 @@
       .products-grid { grid-template-columns: repeat(3, 1fr); }
     }
 
+    /* ─── CATEGORY HEADERS ─── */
+    .category-head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 36px 20px 8px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .category-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--deep);
+      white-space: nowrap;
+      letter-spacing: 0.04em;
+    }
+
+    .category-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--gold), transparent);
+    }
+
+    /* ─── SOCIAL BUTTONS ─── */
+    .social-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 22px;
+      border-radius: 40px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .social-btn:hover { transform: translateY(-2px); }
+
+    .social-btn.instagram {
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: white;
+      box-shadow: 0 2px 10px rgba(220,39,67,0.25);
+    }
+
+    .social-btn.instagram:hover { box-shadow: 0 6px 20px rgba(220,39,67,0.35); }
+
+    .social-btn.pinterest {
+      background: #e60023;
+      color: white;
+      box-shadow: 0 2px 10px rgba(230,0,35,0.2);
+    }
+
+    .social-btn.pinterest:hover { box-shadow: 0 6px 20px rgba(230,0,35,0.35); }
+
+    .social-btn svg { width: 17px; height: 17px; }
+
+    .custom-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 1.5px solid rgba(255,255,255,0.3);
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      padding: 11px 24px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+      font-family: 'Jost', sans-serif;
+    }
+
+    .custom-wa-btn:hover {
+      border-color: #25d366;
+      color: #25d366;
+      transform: translateY(-1px);
+    }
+
+    .custom-wa-btn svg { width: 16px; height: 16px; }
+
     /* ─── FADE IN ANIMATION ─── */
     .fade-in {
       opacity: 0;
@@ -517,160 +610,250 @@
       </span>
     </p>
 
+    <!-- ── EARRINGS SECTION ── -->
+    <div class="category-head">
+      <h3 class="category-title">Earrings</h3>
+      <div class="category-line"></div>
+    </div>
+
     <div class="products-grid">
 
-      <!-- PRODUCT 1 -->
+      <!-- EARRING 1 -->
       <div class="product-card fade-in">
         <div class="card-gallery">
-          <div class="card-scroll" id="gallery-1">
-            <img src="images/products/p1_1.jpeg" alt="Product 1 view 1" draggable="false"/>
-            <img src="images/products/p1_2.jpeg" alt="Product 1 view 2" draggable="false"/>
+          <div class="card-scroll" id="gallery-e1">
+            <img src="images/products/P1_1.jpeg" alt="Earring 1 view 1" draggable="false"/>
+            <img src="images/products/P1_2.jpeg" alt="Earring 1 view 2" draggable="false"/>
+            
           </div>
-          <div class="card-dots" id="dots-1">
+          <div class="card-dots" id="dots-e1">
             <div class="card-dot active"></div>
             <div class="card-dot"></div>
+            <div class="card-dot"></div>
           </div>
-          <button class="card-arrow prev" onclick="scrollGallery('gallery-1','dots-1',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
-          <button class="card-arrow next" onclick="scrollGallery('gallery-1','dots-1',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-e1','dots-e1',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-e1','dots-e1',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
         </div>
         <div class="card-body">
-          <h3 class="card-name">Wire Art Brooch</h3>
-          <p class="card-desc">Gold wire sculpted into an ornate monogram with amber crystal drop.</p>
-          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20the%20Wire%20Art%20Brooch%20from%20tanamor.co.in!" target="_blank">
+          <h3 class="card-name">Moonveil</h3>
+          <p class="card-desc">Elegant hoop earrings with ocean-hued stones, capturing the serene glow of moonlit waves.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Earring%20Moonveil%20from%20tanamor.co.in!" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Enquire to Buy
           </a>
         </div>
       </div>
 
-      <!-- PRODUCT 2 -->
+      <!-- EARRING 2 -->
       <div class="product-card fade-in">
         <div class="card-gallery">
-          <div class="card-scroll" id="gallery-2">
-            <img src="images/products/p2_1.jpeg" alt="Product 2 view 1" draggable="false"/>
-            <img src="images/products/p2_2.jpeg" alt="Product 2 view 2" draggable="false"/>
-            <img src="images/products/p2_3.jpeg" alt="Product 2 view 3" draggable="false"/>
-            <img src="images/products/p2_4.jpeg" alt="Product 2 view 4" draggable="false"/>
+          <div class="card-scroll" id="gallery-e2">
+            <img src="images/products/P2_1.jpeg" alt="Earring 2 view 1" draggable="false"/>
+            <img src="images/products/P2_2.jpeg" alt="Earring 2 view 2" draggable="false"/>
+            
           </div>
-          <div class="card-dots" id="dots-2">
+          <div class="card-dots" id="dots-e2">
             <div class="card-dot active"></div>
             <div class="card-dot"></div>
             <div class="card-dot"></div>
-            <div class="card-dot"></div>
           </div>
-          <button class="card-arrow prev" onclick="scrollGallery('gallery-2','dots-2',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
-          <button class="card-arrow next" onclick="scrollGallery('gallery-2','dots-2',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-e2','dots-e2',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-e2','dots-e2',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
         </div>
         <div class="card-body">
-          <h3 class="card-name">Stone & Wire Pendant</h3>
-          <p class="card-desc">Delicate wire wrapping cradling natural stones in warm gold tones.</p>
-          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20the%20Stone%20%26%20Wire%20Pendant%20from%20tanamor.co.in!" target="_blank">
+          <h3 class="card-name">Kanak</h3>
+          <p class="card-desc"> Radiant gold toned hoop earrings adorned with warm-toned gemstones and a graceful drop.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Earring%20Kanak%20from%20tanamor.co.in!" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Enquire to Buy
           </a>
         </div>
       </div>
 
-      <!-- PRODUCT 3 -->
+      <!-- EARRING 3 -->
       <div class="product-card fade-in">
         <div class="card-gallery">
-          <div class="card-scroll" id="gallery-3">
-            <img src="images/products/p3_1.jpeg" alt="Product 3 view 1" draggable="false"/>
-            <img src="images/products/p3_2.jpeg" alt="Product 3 view 2" draggable="false"/>
-            <img src="images/products/p3_3.jpeg" alt="Product 3 view 3" draggable="false"/>
+          <div class="card-scroll" id="gallery-e3">
+            <img src="images/products/P3_1.jpeg" alt="Earring 3 view 1" draggable="false"/>
+            <img src="images/products/P3_2.jpeg" alt="Earring 3 view 2" draggable="false"/>
+            
           </div>
-          <div class="card-dots" id="dots-3">
+          <div class="card-dots" id="dots-e3">
             <div class="card-dot active"></div>
             <div class="card-dot"></div>
             <div class="card-dot"></div>
           </div>
-          <button class="card-arrow prev" onclick="scrollGallery('gallery-3','dots-3',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
-          <button class="card-arrow next" onclick="scrollGallery('gallery-3','dots-3',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-e3','dots-e3',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-e3','dots-e3',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
         </div>
         <div class="card-body">
-          <h3 class="card-name">Crystal Drop Earrings</h3>
-          <p class="card-desc">Elegant cascading wire earrings adorned with handpicked gemstone drops.</p>
-          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20the%20Crystal%20Drop%20Earrings%20from%20tanamor.co.in!" target="_blank">
+          <h3 class="card-name">Hirkani</h3>
+          <p class="card-desc"> Elegant hoop earrings with luminous beads and a radiant drop, reflecting timeless desi charm.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Earring%20Hirkani%20from%20tanamor.co.in!" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Enquire to Buy
           </a>
         </div>
       </div>
 
-      <!-- PRODUCT 4 -->
+      <!-- EARRING 4 -->
       <div class="product-card fade-in">
         <div class="card-gallery">
-          <div class="card-scroll" id="gallery-4">
-            <img src="images/products/p4_1.jpeg" alt="Product 4 view 1" draggable="false"/>
-            <img src="images/products/p4_2.jpeg" alt="Product 4 view 2" draggable="false"/>
-            <img src="images/products/p4_3.jpeg" alt="Product 4 view 3" draggable="false"/>
+          <div class="card-scroll" id="gallery-e4">
+            <img src="images/products/P4_1.jpeg" alt="Earring 4 view 1" draggable="false"/>
+            <img src="images/products/P4_2.jpeg" alt="Earring 4 view 2" draggable="false"/>
+            
           </div>
-          <div class="card-dots" id="dots-4">
+          <div class="card-dots" id="dots-e4">
             <div class="card-dot active"></div>
             <div class="card-dot"></div>
             <div class="card-dot"></div>
           </div>
-          <button class="card-arrow prev" onclick="scrollGallery('gallery-4','dots-4',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
-          <button class="card-arrow next" onclick="scrollGallery('gallery-4','dots-4',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-e4','dots-e4',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-e4','dots-e4',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
         </div>
         <div class="card-body">
-          <h3 class="card-name">Turquoise Heart Charm</h3>
-          <p class="card-desc">Natural turquoise heart set in intricate gold wire — a wearable keepsake.</p>
-          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20the%20Turquoise%20Heart%20Charm%20from%20tanamor.co.in!" target="_blank">
+          <h3 class="card-name">Meridian</h3>
+          <p class="card-desc">Handmade hoops with a serene blue stone and crystal accents for a refined, elegant look.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Earring%20Meridian%20from%20tanamor.co.in!" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Enquire to Buy
           </a>
         </div>
       </div>
 
-      <!-- PRODUCT 5 -->
+    </div>
+
+    <!-- ── ARM CUFFS SECTION ── -->
+    <div class="category-head">
+      <h3 class="category-title">Arm Cuffs</h3>
+      <div class="category-line"></div>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- CUFF 1 -->
       <div class="product-card fade-in">
         <div class="card-gallery">
-          <div class="card-scroll" id="gallery-5">
-            <img src="images/products/p5_1.jpeg" alt="Product 5 view 1" draggable="false"/>
-            <img src="images/products/p5_2.jpeg" alt="Product 5 view 2" draggable="false"/>
-            <img src="images/products/p5_3.jpeg" alt="Product 5 view 3" draggable="false"/>
+          <div class="card-scroll" id="gallery-c1">
+            <img src="images/products/P11_1.jpeg" alt="Cuff 1 view 1" draggable="false"/>
+            <img src="images/products/P11_2.jpeg" alt="Cuff 1 view 2" draggable="false"/>
+            
           </div>
-          <div class="card-dots" id="dots-5">
+          <div class="card-dots" id="dots-c1">
             <div class="card-dot active"></div>
             <div class="card-dot"></div>
             <div class="card-dot"></div>
           </div>
-          <button class="card-arrow prev" onclick="scrollGallery('gallery-5','dots-5',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
-          <button class="card-arrow next" onclick="scrollGallery('gallery-5','dots-5',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-c1','dots-c1',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-c1','dots-c1',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
         </div>
         <div class="card-body">
-          <h3 class="card-name">Amber Teardrop Ring</h3>
-          <p class="card-desc">Cognac amber teardrop bead wrapped in sculpted gold wire — one of a kind.</p>
-          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20the%20Amber%20Teardrop%20Ring%20from%20tanamor.co.in!" target="_blank">
+          <h3 class="card-name">Scarlet</h3>
+          <p class="card-desc">A refined gold-tone arm cuff featuring a striking red gemstone, embodying bold elegance and timeless sophistication.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Arm%20Cuff%20Scarlet%20from%20tanamor.co.in!" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Enquire to Buy
           </a>
         </div>
       </div>
 
-      <!-- PRODUCT 6 -->
+      <!-- CUFF 2 -->
       <div class="product-card fade-in">
         <div class="card-gallery">
-          <div class="card-scroll" id="gallery-6">
-            <img src="images/products/p6_1.jpeg" alt="Product 6 view 1" draggable="false"/>
-            <img src="images/products/p6_2.jpeg" alt="Product 6 view 2" draggable="false"/>
-            <img src="images/products/p6_3.jpeg" alt="Product 6 view 3" draggable="false"/>
-            <img src="images/products/p6_4.jpeg" alt="Product 6 view 4" draggable="false"/>
+          <div class="card-scroll" id="gallery-c2">
+            <img src="images/products/P22_1.jpeg" alt="Cuff 2 view 1" draggable="false"/>
+            <img src="images/products/P22_2.jpeg" alt="Cuff 2 view 2" draggable="false"/>
+            
           </div>
-          <div class="card-dots" id="dots-6">
+          <div class="card-dots" id="dots-c2">
             <div class="card-dot active"></div>
             <div class="card-dot"></div>
             <div class="card-dot"></div>
-            <div class="card-dot"></div>
           </div>
-          <button class="card-arrow prev" onclick="scrollGallery('gallery-6','dots-6',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
-          <button class="card-arrow next" onclick="scrollGallery('gallery-6','dots-6',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-c2','dots-c2',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-c2','dots-c2',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
         </div>
         <div class="card-body">
-          <h3 class="card-name">Carnelian Flow Necklace</h3>
-          <p class="card-desc">Warm carnelian stones woven into a flowing wire necklace with golden curls.</p>
-          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20the%20Carnelian%20Flow%20Necklace%20from%20tanamor.co.in!" target="_blank">
+          <h3 class="card-name">Jasmine</h3>
+          <p class="card-desc">A graceful spiral bracelet with a serene blue stone, inspired by flowing elegance.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Arm%20Cuff%20Jasmine%20from%20tanamor.co.in!" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Enquire to Buy
+          </a>
+        </div>
+      </div>
+
+      <!-- CUFF 3 -->
+      <div class="product-card fade-in">
+        <div class="card-gallery">
+          <div class="card-scroll" id="gallery-c3">
+            <img src="images/products/P33_1.jpeg" alt="Cuff 3 view 1" draggable="false"/>
+            <img src="images/products/P33_2.jpeg" alt="Cuff 3 view 2" draggable="false"/>
+            
+          </div>
+          <div class="card-dots" id="dots-c3">
+            <div class="card-dot active"></div>
+            <div class="card-dot"></div>
+            <div class="card-dot"></div>
+          </div>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-c3','dots-c3',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-c3','dots-c3',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Varuna</h3>
+          <p class="card-desc">A graceful gold-tone arm cuff adorned with serene blue stones, evoking fluid elegance and oceanic charm.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Arm%20Cuff%20Varuna%20from%20tanamor.co.in!" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Enquire to Buy
+          </a>
+        </div>
+      </div>
+
+      <!-- CUFF 4 -->
+      <div class="product-card fade-in">
+        <div class="card-gallery">
+          <div class="card-scroll" id="gallery-c4">
+            <img src="images/products/P44.jpeg" alt="Cuff 4 view 1" draggable="false"/>
+            
+          </div>
+          <div class="card-dots" id="dots-c4">
+            <div class="card-dot active"></div>
+            <div class="card-dot"></div>
+            <div class="card-dot"></div>
+          </div>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-c4','dots-c4',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-c4','dots-c4',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Sahara</h3>
+          <p class="card-desc">A striking gold-tone arm cuff adorned with warm amber tones, capturing the bold elegance of desert-inspired beauty.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Arm%20Cuff%20Sahara%20from%20tanamor.co.in!" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Enquire to Buy
+          </a>
+        </div>
+      </div>
+
+ <!-- CUFF 5 -->
+      <div class="product-card fade-in">
+        <div class="card-gallery">
+          <div class="card-scroll" id="gallery-c4">
+            <img src="images/products/P55.jpeg" alt="Cuff 4 view 1" draggable="false"/>
+            
+          </div>
+          <div class="card-dots" id="dots-c4">
+            <div class="card-dot active"></div>
+            <div class="card-dot"></div>
+            <div class="card-dot"></div>
+          </div>
+          <button class="card-arrow prev" onclick="scrollGallery('gallery-c4','dots-c4',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="card-arrow next" onclick="scrollGallery('gallery-c4','dots-c4',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Entangled</h3>
+          <p class="card-desc">An elegant gold toned armcuff with graceful swirls and a delicate gemstone drop.</p>
+          <a class="card-buy" href="https://wa.me/919594992004?text=Hi%2C%20I%27m%20interested%20in%20Arm%20Cuff%20Entangled%20from%20tanamor.co.in!" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Enquire to Buy
           </a>
@@ -685,9 +868,24 @@
     <p class="label">The story behind tanamor</p>
     <h2>Every piece is made<br/>with love &amp; intention</h2>
     <p>Tanamor is a two-woman handmade jewellery studio. Each creation is wire-sculpted by hand, using natural stones and crystals. No moulds, no machines — just craft, care, and a lot of heart.</p>
-    <a class="about-wa-btn" href="https://wa.me/919594992004?text=Hi%2C%20I%27d%20love%20to%20know%20more%20about%20Tanamor%20jewellery!" target="_blank" rel="noopener">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Chat with us on WhatsApp
+
+    <!-- Instagram + Pinterest -->
+    <div class="social-row">
+      <a class="social-btn instagram" href="https://instagram.com/tanamor" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        Instagram
+      </a>
+      <a class="social-btn pinterest" href="https://pinterest.com/tanamor" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        Pinterest
+      </a>
+    </div>
+
+    <!-- Custom order WhatsApp -->
+    <p style="font-size:0.72rem;color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Want something unique?</p>
+    <a class="custom-wa-btn" href="https://wa.me/919594992004?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20customized%20jewellery%20design!" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Text us for a customized design
     </a>
   </section>
 
